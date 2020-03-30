@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 @objc public protocol AAPhotoBrowserProtocol {
     
@@ -19,5 +20,8 @@ import Foundation
     @objc optional func didDisplayPhoto(at index: Int, with browser: AAPhotoBrowser) -> Void
     //长按序号为index的图片，可以自己在这里添加一些菜单操作
     @objc optional func didLongPressPhoto(at index: Int, with browser: AAPhotoBrowser) -> Void
+    
+    //点击保存按钮，保存图片
+    @objc optional func saveImageWithPhoto(at image: UIImage, with view: UIImageView) -> Void
     
 }

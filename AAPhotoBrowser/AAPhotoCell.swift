@@ -11,8 +11,10 @@ import Kingfisher
 
 class AAPhotoCell: UICollectionViewCell {
     
+    private let bundle = Bundle.init(for: classForCoder())
     var scrollView: UIScrollView!
     var imageView: UIImageView!
+    var downBtn: UIButton!
     weak var browser: AAPhotoBrowser?
     private var firstTouch: CGPoint?
     private var photo: AAPhoto!
@@ -40,6 +42,13 @@ class AAPhotoCell: UICollectionViewCell {
 //        imageView.isUserInteractionEnabled = true
         scrollView.addSubview(imageView)
         
+        let btnY = scrollView.bounds.size.height
+        downBtn = UIButton(type: .custom)
+        downBtn.frame = CGRect(x: scrollView.frame.size.width - 60, y: btnY - 100, width: 40, height: 30)
+        downBtn.setImage(UIImage(named:"xiazai", in: bundle, compatibleWith: nil), for: .normal)
+        contentView.addSubview(downBtn)
+        downBtn.addTarget(self, action: #selector(saveImage), for: .touchUpInside)
+        
         let doubleTap = UITapGestureRecognizer.init(target: self, action: #selector(doubleTapAction))
         doubleTap.numberOfTapsRequired = 2
         self.addGestureRecognizer(doubleTap)
@@ -57,6 +66,10 @@ class AAPhotoCell: UICollectionViewCell {
         self.addGestureRecognizer(longPress)
         
     }
+    
+    @objc func saveImage() {
+          browser?.delegate.saveImageWithPhoto?(at: imageView.image!, with: imageView)
+      }
     
     deinit {
 //        print("PhotoCell销毁")

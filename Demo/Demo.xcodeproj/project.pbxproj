@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		9308D6B822703067009447A0 /* AAPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B222703067009447A0 /* AAPhotoCell.swift */; };
 		9308D6B922703067009447A0 /* AAPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B322703067009447A0 /* AAPhoto.swift */; };
 		9308D6BA22703067009447A0 /* AAPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B422703067009447A0 /* AAPhotoBrowser.swift */; };
+		BCB7B4C92431E51A0044DFD8 /* brower.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB7B4C82431E51A0044DFD8 /* brower.xcassets */; };
 		BFB097DF5AAE8D6E639FAAE9 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0CC661C4A34FE71EB1DAE0 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		9308D6B222703067009447A0 /* AAPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhotoCell.swift; sourceTree = "<group>"; };
 		9308D6B322703067009447A0 /* AAPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhoto.swift; sourceTree = "<group>"; };
 		9308D6B422703067009447A0 /* AAPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhotoBrowser.swift; sourceTree = "<group>"; };
+		BCB7B4C82431E51A0044DFD8 /* brower.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = brower.xcassets; sourceTree = "<group>"; };
 		FA0CF72034CC4EBBAED3A029 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +130,6 @@
 				FA0CF72034CC4EBBAED3A029 /* Pods-Demo.debug.xcconfig */,
 				6388EFC5E1B5E92324D776D0 /* Pods-Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -141,6 +142,7 @@
 				9308D6B222703067009447A0 /* AAPhotoCell.swift */,
 				9308D6B322703067009447A0 /* AAPhoto.swift */,
 				9308D6B422703067009447A0 /* AAPhotoBrowser.swift */,
+				BCB7B4C82431E51A0044DFD8 /* brower.xcassets */,
 			);
 			name = AAPhotoBrowser;
 			path = ../../AAPhotoBrowser;
@@ -224,6 +226,7 @@
 				30F35AA2219EA930007348E8 /* Assets.xcassets in Resources */,
 				30F35AF5219EAE72007348E8 /* 0.jpeg in Resources */,
 				30F35AFA219EAE72007348E8 /* 4.jpeg in Resources */,
+				BCB7B4C92431E51A0044DFD8 /* brower.xcassets in Resources */,
 				30F35AFD219EAE72007348E8 /* 3.jpeg in Resources */,
 				30F35AA0219EA92C007348E8 /* Main.storyboard in Resources */,
 				30F35AFC219EAE72007348E8 /* 2.jpeg in Resources */,
