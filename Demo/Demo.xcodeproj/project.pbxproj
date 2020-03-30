@@ -136,13 +136,8 @@
 		9308D6AE22703067009447A0 /* AAPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				9308D6AF22703067009447A0 /* AACircleProgressView.swift */,
-				9308D6B022703067009447A0 /* AATransitioningDelegate.swift */,
-				9308D6B122703067009447A0 /* AAPhotoBrowserProtocol.swift */,
-				9308D6B222703067009447A0 /* AAPhotoCell.swift */,
-				9308D6B322703067009447A0 /* AAPhoto.swift */,
-				9308D6B422703067009447A0 /* AAPhotoBrowser.swift */,
-				BCB7B4C82431E51A0044DFD8 /* brower.xcassets */,
+				BCB7B4CB2431E6F10044DFD8 /* Assets */,
+				BCB7B4CA2431E6D70044DFD8 /* Classes */,
 			);
 			name = AAPhotoBrowser;
 			path = ../../AAPhotoBrowser;
@@ -154,6 +149,27 @@
 				4D0CC661C4A34FE71EB1DAE0 /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCB7B4CA2431E6D70044DFD8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9308D6AF22703067009447A0 /* AACircleProgressView.swift */,
+				9308D6B022703067009447A0 /* AATransitioningDelegate.swift */,
+				9308D6B122703067009447A0 /* AAPhotoBrowserProtocol.swift */,
+				9308D6B222703067009447A0 /* AAPhotoCell.swift */,
+				9308D6B322703067009447A0 /* AAPhoto.swift */,
+				9308D6B422703067009447A0 /* AAPhotoBrowser.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BCB7B4CB2431E6F10044DFD8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BCB7B4C82431E51A0044DFD8 /* brower.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

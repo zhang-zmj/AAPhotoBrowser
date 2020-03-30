@@ -17,11 +17,23 @@ s.ios.deployment_target = "8.0"
 
 s.source       = { :git => "https://github.com/Fxxxxxx/AAPhotoBrowser.git", :tag => s.version }
 
-s.source_files  = "AAPhotoBrowser/*.swift"
+s.source_files  = "AAPhotoBrowser/Classes/*.swift"
+s.resources  = "AAPhotoBrowser/Assets/*.xcassets"
 
 s.requires_arc = true
 s.framework = "UIKit"
 s.dependency 'Kingfisher'
 s.dependency 'AALRUCache'
 
+
+
 end
+
+
+
+
+
+
+
+
+
