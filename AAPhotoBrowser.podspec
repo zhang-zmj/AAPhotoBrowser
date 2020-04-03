@@ -13,7 +13,7 @@ s.authors            = { "Aaron Feng" => "e2shao1993@163.com" }
 
 s.swift_version = "5"
 
-s.ios.deployment_target = "8.0"
+s.ios.deployment_target = "9.0"
 
 s.source       = { :git => "https://github.com/Fxxxxxx/AAPhotoBrowser.git", :tag => s.version }
 
@@ -24,10 +24,11 @@ s.requires_arc = true
 s.framework = "UIKit"
 s.dependency 'Kingfisher'
 s.dependency 'AALRUCache'
-
+s.dependency 'AAHUD'
 
 
 end
+
 
 
 

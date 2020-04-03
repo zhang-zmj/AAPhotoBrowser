@@ -8,6 +8,8 @@
 
 import UIKit
 import Kingfisher
+import Photos
+import AAHUD
 
 class AAPhotoCell: UICollectionViewCell {
     
@@ -67,9 +69,7 @@ class AAPhotoCell: UICollectionViewCell {
         
     }
     
-    @objc func saveImage() {
-          browser?.delegate.saveImageWithPhoto?(at: imageView.image!, with: imageView)
-      }
+
     
     deinit {
 //        print("PhotoCell销毁")
@@ -274,3 +274,82 @@ extension UIImageView {
     }
     
 }
+
+
+extension AAPhotoCell {
+    
+    @objc func saveImage() {
+        
+        switch PHPhotoLibrary.authorizationStatus() {
+                 case .denied, .restricted: // 1.没有权限
+                     let alert = UIAlertController.init(title: "权限不足", message: "请在iPhone的\"设置-隐私-相机\"中允许访问相册", preferredStyle: .alert)
+                     alert.addAction(UIAlertAction(title: "前往设置", style: .destructive, handler: { (ac) in
+                         UIApplication.shared.openURL(URL(string: UIApplication.openSettingsURLString)!)
+                     }))
+                     alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+                     let window = UIApplication.shared.windows.first { (win) -> Bool in
+                         win.isKeyWindow
+                     }
+                     window?.rootViewController?.present(alert, animated: true)
+                     break;
+                 case .notDetermined: // 2.等待授权
+                     PHPhotoLibrary.requestAuthorization { (status) in
+                         DispatchQueue.main.async {
+                             if status == .authorized {
+                                 
+                                 // 设置绘制图片的大小
+                                UIGraphicsBeginImageContextWithOptions((self.browser?.view.bounds.size)!, false, UIScreen.main.scale)
+                                self.browser?.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+                                 // 绘制图片
+                                 let image = UIGraphicsGetImageFromCurrentImageContext()
+                                 UIGraphicsEndImageContext()
+                                 // 保存图片到相册   如果需要获取保存成功的事件第二和第三个参数需要设置响应对象和方法，该方法为固定格式。
+                                 UIImageWriteToSavedPhotosAlbum(image!, self, #selector(self.savedPhotosAlbum(image:didFinishSavingWithError:contextInfo:)), nil)
+                             } else {
+                                 // 没有授权
+                             }
+                         }
+                     }
+                     break;
+                 case .authorized: // 3.已经授权
+                 
+                     // 设置绘制图片的大小
+                    UIGraphicsBeginImageContextWithOptions((browser?.view.bounds.size)!, false, UIScreen.main.scale)
+                     browser?.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+                     // 绘制图片
+                     let image = UIGraphicsGetImageFromCurrentImageContext()
+                     UIGraphicsEndImageContext()
+                     
+                     // 保存图片到相册   如果需要获取保存成功的事件第二和第三个参数需要设置响应对象和方法，该方法为固定格式。
+                     UIImageWriteToSavedPhotosAlbum(image!, self, #selector(self.savedPhotosAlbum(image:didFinishSavingWithError:contextInfo:)), nil)
+                     break;
+                 default:
+                     break;
+                 }
+        
+      }
+
+    
+    //Swift实现:
+      @objc func savedPhotosAlbum(image:UIImage, didFinishSavingWithError error:NSError?, contextInfo:AnyObject) {
+        
+         var message: String = "保存成功"
+          if error != nil {
+             message = "保存失败"
+          } else {
+             message = "保存成功"
+          }
+         HUD.show(message: message)
+      }
+     
+}
+
+
+
+
+
+
+
+
+
+

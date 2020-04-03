@@ -1,3 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AAHUD/AAHUD.framework
 ${BUILT_PRODUCTS_DIR}/AALRUCache/AALRUCache.framework
+${BUILT_PRODUCTS_DIR}/AAPhotoBrowser/AAPhotoBrowser.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework

@@ -22,13 +22,6 @@
 		30F35AFB219EAE72007348E8 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30F35AF2219EAE72007348E8 /* 5.jpeg */; };
 		30F35AFC219EAE72007348E8 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30F35AF3219EAE72007348E8 /* 2.jpeg */; };
 		30F35AFD219EAE72007348E8 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30F35AF4219EAE72007348E8 /* 3.jpeg */; };
-		9308D6B522703067009447A0 /* AACircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6AF22703067009447A0 /* AACircleProgressView.swift */; };
-		9308D6B622703067009447A0 /* AATransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B022703067009447A0 /* AATransitioningDelegate.swift */; };
-		9308D6B722703067009447A0 /* AAPhotoBrowserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B122703067009447A0 /* AAPhotoBrowserProtocol.swift */; };
-		9308D6B822703067009447A0 /* AAPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B222703067009447A0 /* AAPhotoCell.swift */; };
-		9308D6B922703067009447A0 /* AAPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B322703067009447A0 /* AAPhoto.swift */; };
-		9308D6BA22703067009447A0 /* AAPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9308D6B422703067009447A0 /* AAPhotoBrowser.swift */; };
-		BCB7B4C92431E51A0044DFD8 /* brower.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB7B4C82431E51A0044DFD8 /* brower.xcassets */; };
 		BFB097DF5AAE8D6E639FAAE9 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0CC661C4A34FE71EB1DAE0 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,13 +45,6 @@
 		30F35AF4219EAE72007348E8 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		4D0CC661C4A34FE71EB1DAE0 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6388EFC5E1B5E92324D776D0 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		9308D6AF22703067009447A0 /* AACircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AACircleProgressView.swift; sourceTree = "<group>"; };
-		9308D6B022703067009447A0 /* AATransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AATransitioningDelegate.swift; sourceTree = "<group>"; };
-		9308D6B122703067009447A0 /* AAPhotoBrowserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhotoBrowserProtocol.swift; sourceTree = "<group>"; };
-		9308D6B222703067009447A0 /* AAPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhotoCell.swift; sourceTree = "<group>"; };
-		9308D6B322703067009447A0 /* AAPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhoto.swift; sourceTree = "<group>"; };
-		9308D6B422703067009447A0 /* AAPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPhotoBrowser.swift; sourceTree = "<group>"; };
-		BCB7B4C82431E51A0044DFD8 /* brower.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = brower.xcassets; sourceTree = "<group>"; };
 		FA0CF72034CC4EBBAED3A029 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +81,6 @@
 		30F35A99219EA92C007348E8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				9308D6AE22703067009447A0 /* AAPhotoBrowser */,
 				30F35AEB219EAE72007348E8 /* media */,
 				30F35A9A219EA92C007348E8 /* AppDelegate.swift */,
 				30F35A9C219EA92C007348E8 /* ViewController.swift */,
@@ -133,43 +118,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9308D6AE22703067009447A0 /* AAPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				BCB7B4CB2431E6F10044DFD8 /* Assets */,
-				BCB7B4CA2431E6D70044DFD8 /* Classes */,
-			);
-			name = AAPhotoBrowser;
-			path = ../../AAPhotoBrowser;
-			sourceTree = "<group>";
-		};
 		9F4907F5F17BFDE8AC14689B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4D0CC661C4A34FE71EB1DAE0 /* Pods_Demo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BCB7B4CA2431E6D70044DFD8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9308D6AF22703067009447A0 /* AACircleProgressView.swift */,
-				9308D6B022703067009447A0 /* AATransitioningDelegate.swift */,
-				9308D6B122703067009447A0 /* AAPhotoBrowserProtocol.swift */,
-				9308D6B222703067009447A0 /* AAPhotoCell.swift */,
-				9308D6B322703067009447A0 /* AAPhoto.swift */,
-				9308D6B422703067009447A0 /* AAPhotoBrowser.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BCB7B4CB2431E6F10044DFD8 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				BCB7B4C82431E51A0044DFD8 /* brower.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +196,6 @@
 				30F35AA2219EA930007348E8 /* Assets.xcassets in Resources */,
 				30F35AF5219EAE72007348E8 /* 0.jpeg in Resources */,
 				30F35AFA219EAE72007348E8 /* 4.jpeg in Resources */,
-				BCB7B4C92431E51A0044DFD8 /* brower.xcassets in Resources */,
 				30F35AFD219EAE72007348E8 /* 3.jpeg in Resources */,
 				30F35AA0219EA92C007348E8 /* Main.storyboard in Resources */,
 				30F35AFC219EAE72007348E8 /* 2.jpeg in Resources */,
@@ -298,15 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9308D6B922703067009447A0 /* AAPhoto.swift in Sources */,
-				9308D6B822703067009447A0 /* AAPhotoCell.swift in Sources */,
-				9308D6B622703067009447A0 /* AATransitioningDelegate.swift in Sources */,
 				30F35A9D219EA92C007348E8 /* ViewController.swift in Sources */,
-				9308D6B522703067009447A0 /* AACircleProgressView.swift in Sources */,
 				30F35ABA219EAA23007348E8 /* AACell.swift in Sources */,
 				30F35A9B219EA92C007348E8 /* AppDelegate.swift in Sources */,
-				9308D6B722703067009447A0 /* AAPhotoBrowserProtocol.swift in Sources */,
-				9308D6BA22703067009447A0 /* AAPhotoBrowser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +403,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MV9B26HCTK;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MV9B26HCTK;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

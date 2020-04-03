@@ -73,15 +73,7 @@ public class AAPhotoBrowser: UIViewController {
 //        print("AAPhotoBrowser销毁")
     }
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @objc func disAction() {
         self.dismiss(animated: true, completion: nil)
@@ -123,5 +115,8 @@ extension AAPhotoBrowser: UICollectionViewDataSource, UICollectionViewDelegate {
         delegate.didDisplayPhoto?(at: page, with: self)
         
     }
+    
+    
+    
     
 }

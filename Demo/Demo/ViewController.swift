@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import AAPhotoBrowser
 
+let AAscreenW = UIScreen.main.bounds.size.width
+let AAscreenH = UIScreen.main.bounds.size.height
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
